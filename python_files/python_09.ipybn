@@ -1,0 +1,223 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.10-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596144129020",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | Format Specification"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "***WELCOME\n"
+    }
+   ],
+   "source": [
+    "# For formating there are some options and there need to be in this order after the : [fill][aling][sign][#][0][width][grouping_option][.precision][type]\n",
+    "greet = 'WELCOME'\n",
+    "# fill with * , aling to right , in 10 spaces width\n",
+    "print(f'{greet:*>10}')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "*******WELCOME*******\n"
+    }
+   ],
+   "source": [
+    "# fill with * , aling to center , in 10 spaces width\n",
+    "print(f'{greet:*^21}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "1.5e+05 is your total. \n148,484.47 is your total. \n-5842228.85 is you debt.\n-5_842_228.85 is you debt.\n"
+    }
+   ],
+   "source": [
+    "# for grouping_option and number precision\n",
+    "total = 148484.474484\n",
+    "debt = -5842228.85484\n",
+    "\n",
+    "pretty = (\n",
+    "    f'{total:.2} is your total. \\n'\n",
+    "    f'{total:,.2f} is your total. \\n'\n",
+    "    f'{debt:.2f} is you debt.\\n'\n",
+    "    f'{debt:_.2f} is you debt.'\n",
+    ")\n",
+    "\n",
+    "print(pretty)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "148_484.47           is your total. \n-5_842_228.85        is you debt.\n"
+    }
+   ],
+   "source": [
+    "# tabulate using width\n",
+    "total = 148484.474484\n",
+    "debt = -5842228.85484\n",
+    "\n",
+    "pretty = (\n",
+    "    f'{total: <20_.2f} is your total. \\n'\n",
+    "    f'{debt: <20_.2f} is you debt.'\n",
+    ")\n",
+    "\n",
+    "print(pretty)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "+         148,484.47 is your total. \n-       5,842,228.85 is you debt.\n"
+    }
+   ],
+   "source": [
+    "# tabulate using width sign \n",
+    "total = 148484.474484\n",
+    "debt = -5842228.85484\n",
+    "\n",
+    "pretty = (\n",
+    "    f'{total: =+20,.2f} is your total. \\n'\n",
+    "    f'{debt: =+20,.2f} is you debt.'\n",
+    ")\n",
+    "\n",
+    "print(pretty)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "256 in decimal is 63\n256 in binary is 0b111111\n256 in octal is 0o77\n256 in hexadecimal is 0X3F\n"
+    }
+   ],
+   "source": [
+    "# You can change the type representation \n",
+    "\n",
+    "number = 63\n",
+    "\n",
+    "print(\n",
+    "    f\"\"\"\\\n",
+    "256 in decimal is {number}\n",
+    "256 in binary is {number:#b}\n",
+    "256 in octal is {number:#o}\n",
+    "256 in hexadecimal is {number:#X}\"\"\"\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "A\n"
+    }
+   ],
+   "source": [
+    "# convert to character by ASCII\n",
+    "# Letter A in ASCII\n",
+    "var = 65\n",
+    "print(f'{var:c}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "25%\n"
+    }
+   ],
+   "source": [
+    "# Represent a porcentage\n",
+    "num = 0.25\n",
+    "print(f'{num:.0%}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

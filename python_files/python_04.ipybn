@@ -1,0 +1,75 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596050752700",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | Comments and Docstring"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "'This will make a \\nmultiple lines \\nof coments.'"
+     },
+     "metadata": {},
+     "execution_count": 1
+    }
+   ],
+   "source": [
+    "# Coments are created with the use of '#' for a single line.\n",
+    "\"\"\"This will make a \n",
+    "multiple lines \n",
+    "of coments.\"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "\nThe triple cuote it's used as a Docstring.\nThis is used for documementation.\n\n"
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "The triple cuote it's used as a Docstring.\n",
+    "This is used for documementation.\n",
+    "\"\"\"\n",
+    "# You can get access to the information by\n",
+    "print(__doc__)"
+   ]
+  }
+ ]
+}

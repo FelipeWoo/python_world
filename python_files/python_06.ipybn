@@ -1,0 +1,207 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1603325919061",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | Number data types"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## If have doubts of what is the type of a variable, use the type() function. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The value is:  1 \nThe type is:  <class 'int'>\n"
+    }
+   ],
+   "source": [
+    "# Integers\n",
+    "var = 1\n",
+    "print(\"The value is: \",var,\"\\nThe type is: \",type(var))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The value is:  2.1 \nThe type is:  <class 'float'>\n"
+    }
+   ],
+   "source": [
+    "# Floats\n",
+    "var = 2.1\n",
+    "print(\"The value is: \",var,\"\\nThe type is: \",type(var))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The value is:  a \nThe type is:  <class 'str'>\n"
+    }
+   ],
+   "source": [
+    "# Characters and Strings are equal, a String.\n",
+    "var = 'a'\n",
+    "print(\"The value is: \",var,\"\\nThe type is: \",type(var))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The value is:  211e-2 \nThe type is:  <class 'str'>\nThe value is:  2.11 \nThe type is:  <class 'float'>\nThe value is:  2 \nThe type is:  <class 'int'>\n"
+    }
+   ],
+   "source": [
+    "# Convert to int, float, string\n",
+    "var = '211e-2'\n",
+    "print(\"The value is: \",var,\"\\nThe type is: \",type(var))\n",
+    "var1 = float(var)\n",
+    "print(\"The value is: \",var1,\"\\nThe type is: \",type(var1))\n",
+    "var2 = int(var1)\n",
+    "print(\"The value is: \",var2,\"\\nThe type is: \",type(var2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "(5.2+25j)  +  (63-2j)  =  (68.2+23j)\n"
+    }
+   ],
+   "source": [
+    "# Complex numbers,  c = a + bj\n",
+    "\n",
+    "c = 5.2 + 25j\n",
+    "c1 = 63. -2j\n",
+    "\n",
+    "print(c, ' + ', c1, ' = ', c+c1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The value is:  95 \nThe type is:  <class 'int'>\nThe value is:  (95+0j) \nThe type is:  <class 'complex'>\n"
+    }
+   ],
+   "source": [
+    "# You can convert a regular number to a complex number\n",
+    "\n",
+    "h = 95\n",
+    "print(\"The value is: \",h,\"\\nThe type is: \",type(h))\n",
+    "h = complex(h)\n",
+    "print(\"The value is: \",h,\"\\nThe type is: \",type(h))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "(25, 2)\n"
+    }
+   ],
+   "source": [
+    "# The numbers are also objects, so they can perform actions \"methods\"\n",
+    "print(12.5.as_integer_ratio())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "(7093169413108531, 1125899906842624)"
+     },
+     "metadata": {},
+     "execution_count": 4
+    }
+   ],
+   "source": [
+    "x = 6.3\n",
+    "x.as_integer_ratio()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596232795613",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Youtube Tutorials | Tuples"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "('apple', 'banana', 'cherry')\n"
+    }
+   ],
+   "source": [
+    "# There is a type of value that is called tuple\n",
+    "# A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets\n",
+    "thistuple = (\"apple\", \"banana\", \"cherry\")\n",
+    "print(thistuple)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "banana\n"
+    }
+   ],
+   "source": [
+    "# You can access tuples\n",
+    "print(thistuple[1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "('apple', 'kiwi', 'cherry')\n"
+    }
+   ],
+   "source": [
+    "# There is a trick if you want to change a value in a tuple\n",
+    "x = (\"apple\", \"banana\", \"cherry\")\n",
+    "y = list(x)\n",
+    "y[1] = \"kiwi\"\n",
+    "x = tuple(y)\n",
+    "\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "56\n"
+    }
+   ],
+   "source": [
+    "# You can unpack the tuple in variables\n",
+    "\n",
+    "a,b,c = (21,56,98,6)[0:3]\n",
+    "\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

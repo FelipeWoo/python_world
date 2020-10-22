@@ -1,0 +1,84 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596049007690",
+   "display_name": "Python 3.8.3 64-bit ('bioinformatics': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | Install Python\n",
+    "## All you need to start coding in Python 3."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "# Install miniconda\n",
+    "link: https://docs.conda.io/en/latest/miniconda.html#linux-installers\n",
+    "\n",
+    "$ sudo chmod +x [file_name_sh]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Create a virtual enviroment \n",
+    "$ conda create -n [name_env] python=3.x"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Activate de enviroment, create a folder and open the editor\n",
+    "\n",
+    "$ conda activate [name_env]\n",
+    "\n",
+    "$ mkdir [name_folder]\n",
+    "\n",
+    "$ cd [name_folder]\n",
+    "\n",
+    "$ code . "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "# The enviroment is 'pyt' of this series. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

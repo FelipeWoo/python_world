@@ -1,0 +1,163 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596233653462",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Youtube Tutorials | Sets"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{32, 98, 36, 12, 15, 54, 56}\n"
+    }
+   ],
+   "source": [
+    "#A set is a collection of unique items\n",
+    "items = {12,56,32,15,12,12,36,98,54}\n",
+    "print(items)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "['pepe', 'pecas', 'pica', 'papas', 'pepe', 'pecas']\n{'pica', 'pepe', 'pecas', 'papas'}\n"
+    }
+   ],
+   "source": [
+    "# If you want to convert a list to a set for specific porpuses\n",
+    "names = ['pepe', 'pecas','pica','papas','pepe','pecas']\n",
+    "names_set=set(names)\n",
+    "print(names)\n",
+    "print(names_set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{'8', '4', '3', '6', '1', '5', '7'}\n"
+    }
+   ],
+   "source": [
+    "# You can make a union of universes of words or numbers\n",
+    "num1 = set('65461618387')\n",
+    "num2 = set('15146543545')\n",
+    "\n",
+    "print(num1.union(num2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{'4', '3', '6', '1', '5'}\n"
+    }
+   ],
+   "source": [
+    "# You can make a intersection of universes of words or numbers\n",
+    "num1 = set('65461618387')\n",
+    "num2 = set('15146543545')\n",
+    "\n",
+    "print(num1.intersection(num2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{'8', '7'}\n"
+    }
+   ],
+   "source": [
+    "# You can make a defference of universes of words or numbers\n",
+    "num1 = set('65461618387')\n",
+    "num2 = set('15146543545')\n",
+    "\n",
+    "print(num1.difference(num2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{'8', '7'}\n"
+    }
+   ],
+   "source": [
+    "# You can make a xor of universes of words or numbers\n",
+    "num1 = set('65461618387')\n",
+    "num2 = set('15146543545')\n",
+    "\n",
+    "print(num1.symmetric_difference(num2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

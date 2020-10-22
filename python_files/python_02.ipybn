@@ -1,0 +1,67 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596049661890",
+   "display_name": "Python 3.8.3 64-bit ('bioinformatics': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | Run a Python File\n",
+    "## All you need to start coding in Python 3."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "# Create a new file in the editor and save it with the extension '.py', that would create a script ready to hold python code.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# If you want as alternative you can save a '.ipybn' file and then a Jupyter notebook base on python will be created."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "Hello, World\n"
+    }
+   ],
+   "source": [
+    "# Printing the famous \"Hello Wold\" woulb be like this.\n",
+    "print(\"Hello, World\")"
+   ]
+  }
+ ]
+}

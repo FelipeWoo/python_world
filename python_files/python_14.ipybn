@@ -1,0 +1,110 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596234846764",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Youtube Tutorials | Dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{'Carlos': 9}\n9\n"
+    }
+   ],
+   "source": [
+    "# A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values\n",
+    "# {key:value}\n",
+    "data = {'Carlos':9}\n",
+    "print(data)\n",
+    "print(data[\"Carlos\"])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{'name': 'Carlos', 'age': 25, 'phone': 585555669885}\n"
+    }
+   ],
+   "source": [
+    "# Another way to set dictionaries\n",
+    "\n",
+    "data = dict(\n",
+    "    name='Carlos',\n",
+    "    age=25,\n",
+    "    phone=585555669885,\n",
+    ")\n",
+    "\n",
+    "print(data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "dict_keys(['tom', 'kate', 'bill'])\n"
+    }
+   ],
+   "source": [
+    "# Using the data of studens and grades, we will create a dictionary with lists\n",
+    "\n",
+    "students = {\n",
+    "    'tom' : [80,60,75,63],\n",
+    "    'kate' : [20,89,62,80],\n",
+    "    'bill' : [89,57,48,60],\n",
+    "}\n",
+    "\n",
+    "print(students.keys())\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

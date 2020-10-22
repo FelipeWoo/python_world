@@ -1,0 +1,253 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596226099372",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | More List"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "['cat', 'dog', 'mouse', 'bird', 'ape', 'lizard']\n"
+    }
+   ],
+   "source": [
+    "# Operations with lists\n",
+    "\n",
+    "list1 = ['cat', 'dog','mouse', 'bird']\n",
+    "list2 = ['ape', 'lizard']\n",
+    "# Lists addition\n",
+    "animals = list1 + list2\n",
+    "\n",
+    "print(animals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "['cat', 'dog', 'mouse', 'bird', 'ape', 'lizard', 'fish']\n"
+    }
+   ],
+   "source": [
+    "# Add an animal to the end\n",
+    "animals.append('fish')\n",
+    "\n",
+    "print(animals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "fish\n"
+    }
+   ],
+   "source": [
+    "# This takes out the last element by default or if you specify the index\n",
+    "\n",
+    "last_animal = animals.pop()\n",
+    "print(last_animal)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "['cat', 'dog', 'mouse', 'bird', 'ape', 'lizard']\n"
+    }
+   ],
+   "source": [
+    "# As you can see the original list got modified\n",
+    "print(animals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "1\n"
+    }
+   ],
+   "source": [
+    "# You can count the elements in a list\n",
+    "print(animals.count('mouse'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "2\n"
+    }
+   ],
+   "source": [
+    "# You can look for the index\n",
+    "print(animals.index('mouse'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "['mouse', 'lizard', 'dog', 'cat', 'bird', 'ape']\n"
+    }
+   ],
+   "source": [
+    "# You can sort the list alphabeticaly\n",
+    "animals.sort(reverse=True)\n",
+    "print(animals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "[['Juan', 80, 60, 50, 40], ['Pedro', 60, 89, 64, 54], ['Mario', 81, 82, 64, 73]]\n"
+    }
+   ],
+   "source": [
+    "# You can have a list of a list\n",
+    "\n",
+    "grades = [['Juan',80,60,50,40], ['Pedro',60,89,64,54], ['Mario',81,82,64,73]]\n",
+    "\n",
+    "print(grades)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "['Juan', 80, 60, 50, 40]\n"
+    }
+   ],
+   "source": [
+    "# One element of the list is a list\n",
+    "print(grades[0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "Juan\n"
+    }
+   ],
+   "source": [
+    "# If you want to access an element of this las list\n",
+    "print(grades[0][0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "exdfgvbjhn \n ['b', 'd', 'e', 'f', 'g', 'h', 'j', 'n', 'v', 'x']\n"
+    }
+   ],
+   "source": [
+    "# You can sorted characters\n",
+    "cha='exdfgvbjhn'\n",
+    "new_cha=sorted(cha)\n",
+    "print(cha,'\\n', new_cha)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

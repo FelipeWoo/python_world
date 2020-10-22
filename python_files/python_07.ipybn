@@ -1,0 +1,151 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1603326525560",
+   "display_name": "Python 3.6.10 64-bit"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | String Data Type"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "I can't tell you: \"F you\"\n"
+    }
+   ],
+   "source": [
+    "# Strings\n",
+    "\n",
+    "msg = 'I can\\'t tell you: \"F you\"'\n",
+    "print(msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "holaman\n('hola', 'man') <class 'tuple'>\nholaman\n"
+    }
+   ],
+   "source": [
+    "# You can concatenate two strings\n",
+    "msg = 'hola' + 'man'\n",
+    "print(msg)\n",
+    "# This creates a list of two values named tuple\n",
+    "msg = 'hola','man'\n",
+    "print(msg,type(msg))\n",
+    "#You can concatenate two strings this other way\n",
+    "msg = 'hola'  'man'\n",
+    "print(msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The number of colors are:  56\n"
+    }
+   ],
+   "source": [
+    "# You can print strings and numbres\n",
+    "num = 56\n",
+    "print(\"The number of colors are: \",num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "TypeError",
+     "evalue": "must be str, not int",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-3-bd35fa923212>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# But you can't concatenate other that strings\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mnum\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m45\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mmsg\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'I am '\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mnum\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmsg\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mTypeError\u001b[0m: must be str, not int"
+     ]
+    }
+   ],
+   "source": [
+    "# But you can't concatenate other that strings\n",
+    "num = 45\n",
+    "msg = 'I am ' + num\n",
+    "\n",
+    "print(msg)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "I am 45\n"
+    }
+   ],
+   "source": [
+    "# You can convert everything to work\n",
+    "num = 45\n",
+    "msg = 'I am ' + str(num)\n",
+    "\n",
+    "print(msg)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

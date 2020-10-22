@@ -1,0 +1,86 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.10-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596139460759",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | Raw and Format"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "c:\\users\\algo\\mas\n"
+    }
+   ],
+   "source": [
+    "# Raw strings are ment to eliminate all the \\ formating, very useful in cases like:\n",
+    "print(r'c:\\users\\algo\\mas')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "My name is Larry and I am 35.\nMy name is Larry and I am 35.\nMy name is 35 and I am Larry.\nMy name is Larry and I am 35.\nMy name is Larry and I am Larry.\n"
+    }
+   ],
+   "source": [
+    "# It is possible to create a string with variables\n",
+    "name = \"Larry\"\n",
+    "age = 35\n",
+    "msg = f'My name is {name} and I am {age}.'\n",
+    "print(msg)\n",
+    "msg = 'My name is {} and I am {}.'.format(name,age)\n",
+    "print(msg)\n",
+    "msg = 'My name is {1} and I am {0}.'.format(name,age)\n",
+    "print(msg)\n",
+    "msg = 'My name is %s and I am %i.' % (name, age)\n",
+    "print(msg)\n",
+    "msg = 'My name is {f_name} and I am {f_name}.'.format(f_name=name)\n",
+    "print(msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

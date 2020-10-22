@@ -1,2 +1,3 @@
-# python_world
-Python scripts based on Jupyther Notebooks.
+# Jupyter Notes for Python Beginers
+
+This is a secuence of python scripts.

@@ -1,0 +1,94 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596565587196",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Python Tutorials | Conditional Loops"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Use while for validation\n",
+    "\n",
+    "num = input('Check for prime of: ')\n",
+    "\n",
+    "while not num.isdigit():\n",
+    "    num = input('Check for a prime of: ')\n",
+    "num = int(num)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "79 is prime.\n"
+    }
+   ],
+   "source": [
+    "# Use do-while for validation\n",
+    "num = ''\n",
+    "init = True\n",
+    "while not num.isdigit() or init:\n",
+    "    init = False\n",
+    "    num = input('Check for a prime of: ')\n",
+    "num = int(num)\n",
+    "\n",
+    "if num <= 1:\n",
+    "    print(num, 'is not prime')\n",
+    "else:\n",
+    "    divisor = num -1   \n",
+    "\n",
+    "    while True:\n",
+    "        if divisor == 1:\n",
+    "            print(num, 'is prime.')\n",
+    "            break\n",
+    "        if (num % divisor) == 0:\n",
+    "            print(num, 'is not prime.')\n",
+    "            break\n",
+    "        divisor -= 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

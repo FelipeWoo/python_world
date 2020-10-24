@@ -30,16 +30,16 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {
-    "tags": []
-   },
    "source": [
     "# Install miniconda\n",
     "link: https://docs.conda.io/en/latest/miniconda.html#linux-installers\n",
     "\n",
     "$ sudo chmod +x [file_name_sh]"
-   ]
+   ],
+   "cell_type": "markdown",
+   "metadata": {
+    "tags": []
+   }
   },
   {
    "cell_type": "markdown",

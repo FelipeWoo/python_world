@@ -1,0 +1,111 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596265716017",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Youtube Tutorials | Ternary Operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "Can you enter?  No\n"
+    }
+   ],
+   "source": [
+    "# result = A if True else B\n",
+    "# Either A or B will be asignet to the result\n",
+    "\n",
+    "person_age = 15\n",
+    "allowed_in = 'Yes' if person_age >= 18 else 'No'\n",
+    "\n",
+    "print('Can you enter? ',allowed_in)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The cheapest item price is $95.36\n"
+    }
+   ],
+   "source": [
+    "a = 125.66\n",
+    "b = 95.36\n",
+    "\n",
+    "cheapest = a if a < b else b\n",
+    "print(f'The cheapest item price is ${cheapest}') "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "The best item is Item A\n"
+    }
+   ],
+   "source": [
+    "item_a = {'name':'Item A','price':38.21,'state':'new'}\n",
+    "item_b = {'name':'Item B','price':34.58,'state':'used'}\n",
+    "\n",
+    "if item_a['price'] > item_b['price']:\n",
+    "    if (item_a['state'] == 'new') and (item_b['state'] == 'used') and item_a['price'] - item_b['price'] <= 5:\n",
+    "        best = item_a\n",
+    "    else:\n",
+    "        best = item_b\n",
+    "\n",
+    "\n",
+    "\n",
+    "print(f\"The best item is {best['name']}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

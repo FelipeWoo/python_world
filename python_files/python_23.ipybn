@@ -1,0 +1,91 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596309220816",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | User Input"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name = input('Enter your name = ')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "Welcome, Pepe\n"
+    }
+   ],
+   "source": [
+    "if name == '':\n",
+    "    print('Do not leave the field blank.')\n",
+    "elif not name.isalpha():\n",
+    "    print('Only alphabetical letters allowed.')\n",
+    "else:\n",
+    "    print(f'Welcome, {name}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "Password, 5494694\n"
+    }
+   ],
+   "source": [
+    "# For passwords you ca use getpass\n",
+    "from getpass import getpass\n",
+    "\n",
+    "passw = getpass('Enter your pass = ')\n",
+    "print(f'Password, {passw}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

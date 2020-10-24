@@ -1,0 +1,88 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596574005346",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#  YouTube Python Tutorials | Generator Expressions\n",
+    "## Iterable vs iterator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "milk eggs\nmilk eggs\nmilk\neggs\nbacon\nbeef\nsoup\nbread\nmustard\ntoothpaste\nmilk\neggs\nbacon\nbeef\nsoup\nbread\nmustard\ntoothpaste\n"
+    }
+   ],
+   "source": [
+    "# The list is iterable and by indexing we can acces each value\n",
+    "\n",
+    "shopping_list = [\n",
+    "    'milk','eggs','bacon','beef',\n",
+    "    'soup','bread','mustard','toothpaste'\n",
+    "]\n",
+    "\n",
+    "# There is a special Python thing. \"The Iterator\", the something that makes the action of iterate. \n",
+    "pencil_holder = shopping_list.__iter__()\n",
+    "\n",
+    "first = pencil_holder.__next__()\n",
+    "second = pencil_holder.__next__()\n",
+    "\n",
+    "print(first, second)\n",
+    "\n",
+    "# If you want you can use the python function \n",
+    "\n",
+    "pencil_holder = iter(shopping_list )\n",
+    "first = next(pencil_holder)\n",
+    "second = next(pencil_holder)\n",
+    "\n",
+    "print(first, second)\n",
+    "\n",
+    "\n",
+    "i=0\n",
+    "while i < len(shopping_list):\n",
+    "    curr_item = shopping_list[i]\n",
+    "    print(curr_item)\n",
+    "    i +=1\n",
+    "\n",
+    "for curr_item in shopping_list:\n",
+    "    print(curr_item)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

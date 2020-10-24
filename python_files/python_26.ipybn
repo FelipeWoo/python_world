@@ -1,0 +1,234 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596051819831",
+   "display_name": "Python 3.8.3 64-bit ('bioinformatics': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python Tutorials | 26"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "# Complex for loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Sample of data in a form of list.\n",
+    "students = {\n",
+    "    'tom' : [80,60,75,63],\n",
+    "    'kate' : [20,89,62,80],\n",
+    "    'bill' : [89,57,48,60]\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "[80, 60, 75, 63]\n[20, 89, 62, 80]\n[89, 57, 48, 60]\n"
+    }
+   ],
+   "source": [
+    "# Getting the vector data from each student.\n",
+    "for grades in students.values():\n",
+    "    print(grades)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "80\n60\n75\n63\n20\n89\n62\n80\n89\n57\n48\n60\n"
+    }
+   ],
+   "source": [
+    "# Getting each single value consists in, taking each vector with the outer for and then take each value from the vector with the inner for loop.\n",
+    "for grades in students.values():\n",
+    "    for g in grades: \n",
+    "        print(g)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "[83, 63, 78, 66]\n"
+    }
+   ],
+   "source": [
+    "# Obtaining the values of Tom by index and incrementing them by 3.\n",
+    "for i in range(len(students['tom'])):\n",
+    "    students['tom'][i] += 3\n",
+    "print(students['tom'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+    }
+   ],
+   "source": [
+    "# Creating a list with intervals with a for.\n",
+    "print([x for x in range(10)])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]\n"
+    }
+   ],
+   "source": [
+    "# Adding conditional to the interval. Creates a list of 10 elements 2 by 2.\n",
+    "print([x * 2 for x in range(10)])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "[2, 4, 6, 10, 12, 14, 18]\n"
+    }
+   ],
+   "source": [
+    "# Adding an esception. Discard all numbers divisible by 4. Now the list is not longer made of 10 elements. \n",
+    "print([x * 2 for x in range(10) if not x % 4 == 0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "[86, 66, 81, 69]"
+     },
+     "metadata": {},
+     "execution_count": 13
+    }
+   ],
+   "source": [
+    "# Combinig the idea of the complex for loop and the increment of grades. \n",
+    "[grade + 3 for grade in students['tom']]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "[83, 66, 78, 69]"
+     },
+     "metadata": {},
+     "execution_count": 14
+    }
+   ],
+   "source": [
+    "# Adding restricions to the new list in the costrution process. \n",
+    "[grade + 3 if grade < 70 else grade for grade in students['tom']]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "[83, 63, 78, 66, 20, 89, 62, 80, 89, 57, 48, 60]\n66.25\n"
+    }
+   ],
+   "source": [
+    "# Nested for loops added to a list\n",
+    "all_grades = [grade for grades in students.values() for grade in grades]\n",
+    "print(all_grades)\n",
+    "class_avg = sum(all_grades) / len(all_grades)\n",
+    "print(class_avg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

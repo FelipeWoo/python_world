@@ -1,0 +1,201 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": 3
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python_defaultSpec_1596566737347",
+   "display_name": "Python 3.6.10 64-bit ('pyt': conda)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# YouTube Tutorials | Iterative Loops "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "jake, you are invited to my party\nkate, you are invited to my party\nalice, you are invited to my party\nmiller, you are invited to my party\nbob, you are invited to my party\npepe, you are invited to my party\n"
+    }
+   ],
+   "source": [
+    "# How to retreve data from list with the for loop\n",
+    "\n",
+    "names = ['jake','kate','alice','miller', 'bob', 'pepe']\n",
+    "grades = [80,60,50,40,96,99]\n",
+    "\n",
+    "for name in names:\n",
+    "    print(name + ', you are invited to my party')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "jake, you are invited to my party\nkate, you are invited to my party\nalice, you are invited to my party\n"
+    }
+   ],
+   "source": [
+    "# If you want to ask for data by index\n",
+    "\n",
+    "for index in [0,1,2]:\n",
+    "    print(names[index] + ', you are invited to my party')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "jake, you are invited to my party\nkate, you are invited to my party\nalice, you are invited to my party\n"
+    }
+   ],
+   "source": [
+    "# If you want to ask for data by index, using range function\n",
+    "\n",
+    "for index in range(3):\n",
+    "    print(names[index] + ', you are invited to my party')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "no\n"
+    }
+   ],
+   "source": [
+    "# This can be applied to strings and for and while loop have else options\n",
+    "\n",
+    "for char in 'Jeremy':\n",
+    "    if char == 'a':\n",
+    "        print('yes')\n",
+    "        break\n",
+    "else:\n",
+    "    print('no')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "['jake', 'kate', 'alice', 'miller', 'bob', 'kate']\n"
+    }
+   ],
+   "source": [
+    "# It is very important to make a copy of a list, if you want to modify it\n",
+    "\n",
+    "for person in names.copy():\n",
+    "    if person == 'jake':\n",
+    "        names.append('kate')\n",
+    "\n",
+    "print(names)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "{'jake': 80, 'kate': 60, 'alice': 50, 'miller': 40, 'bob': 96, 'pepe': 99}\n"
+    }
+   ],
+   "source": [
+    "# If you want to loop two lists they need to be the same length\n",
+    "student_grades = dict()\n",
+    "for name, grade in zip(names, grades):\n",
+    "    student_grades.update({name:grade})\n",
+    "\n",
+    "print(student_grades)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": "Welcome,  bob\n"
+    }
+   ],
+   "source": [
+    "# This is a case of use of various elements \n",
+    "\n",
+    "users = ['jake','kate','alice','miller', 'bob', 'pepe']\n",
+    "\n",
+    "for tries in reversed(range(3)):\n",
+    "    current_user = input('enter in your name: ')\n",
+    "    if current_user in users:\n",
+    "        break\n",
+    "    else:\n",
+    "        print('wrong. tries left =', tries)\n",
+    "else:\n",
+    "    raise SystemExit('Ran out of tries')\n",
+    "\n",
+    "print('Welcome, ', current_user)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}

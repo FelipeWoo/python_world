@@ -34,7 +34,7 @@
     "# Install miniconda\n",
     "link: https://docs.conda.io/en/latest/miniconda.html#linux-installers\n",
     "\n",
-    "$ sudo chmod +x [file_name_sh]"
+    "    $ sudo chmod +x [file_name_sh]"
    ],
    "cell_type": "markdown",
    "metadata": {
@@ -46,7 +46,7 @@
    "metadata": {},
    "source": [
     "# Create a virtual enviroment \n",
-    "$ conda create -n [name_env] python=3.x"
+    "    $ conda create -n [name_env] python=3.x"
    ]
   },
   {
@@ -55,13 +55,13 @@
    "source": [
     "# Activate de enviroment, create a folder and open the editor\n",
     "\n",
-    "$ conda activate [name_env]\n",
+    "    $ conda activate [name_env]\n",
     "\n",
-    "$ mkdir [name_folder]\n",
+    "    $ mkdir [name_folder]\n",
     "\n",
-    "$ cd [name_folder]\n",
+    "    $ cd [name_folder]\n",
     "\n",
-    "$ code . "
+    "    $ code . "
    ]
   },
   {

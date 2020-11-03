@@ -1,0 +1,54 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.12-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "Python 3.6.12 64-bit",
+   "display_name": "Python 3.6.12 64-bit",
+   "metadata": {
+    "interpreter": {
+     "hash": "08098ebc7261094f3f68aa197c8f016cf154b80c27beeb2572f9048c32ed23f3"
+    }
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "source": [
+    "# Título\n",
+    "## Sub-Título\n",
+    "### sub-sub-Título\n",
+    "Texto (se ejecuta con <alt> <Enter> o <shift> <Enter>)"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Esto es un comentario en python"
+   ]
+  },
+  {
+   "source": [],
+   "cell_type": "markdown",
+   "metadata": {}
+  }
+ ]
+}

@@ -10,12 +10,17 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": 3
+   "version": "3.8.3-final"
   },
   "orig_nbformat": 2,
   "kernelspec": {
-   "name": "python_defaultSpec_1603326525560",
-   "display_name": "Python 3.6.10 64-bit"
+   "name": "python3",
+   "display_name": "Python 3.8.3 64-bit ('phy': conda)",
+   "metadata": {
+    "interpreter": {
+     "hash": "054ff0c979ce1a240260951ab7975cbcfa9cd27cdadcddfb0ce6992129b18f0c"
+    }
+   }
   }
  },
  "nbformat": 4,
@@ -138,6 +143,23 @@
     "msg = 'I am ' + str(num)\n",
     "\n",
     "print(msg)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "Agregado de muestra\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Agregado de muestra')"
    ]
   },
   {
